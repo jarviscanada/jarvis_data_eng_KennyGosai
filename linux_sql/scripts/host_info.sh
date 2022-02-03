@@ -7,6 +7,12 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
+# # of args
+if [ $# -ne  5 ]; then
+  echo 'USAGE: ./scripts/host_info.sh <psql_host> <psql_port> <db_name> <psql_user> <psql_password>';
+  exit 1
+fi
+
 #- parse host hardware specifications using bash cmds
 lscpu_out=`lscpu`
 

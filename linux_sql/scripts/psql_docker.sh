@@ -32,8 +32,11 @@ case $cmd in
   #Create container
   #get latest postgres image
   docker pull postgres
+
 	#create a new volume if not exist
   docker volume create pgdata
+
+  export PGPASSWORD=$db_password
 	#create a container using psql image with name=jrvs-psql
   docker run --name jrvs-psql -e POSTGRES_PASSWORD=$db_password -e POSTGRES_USER=$db_username -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 	exit $?
