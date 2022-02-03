@@ -7,7 +7,7 @@ This project is a minimum viable product that manages a cluster of nodes/servers
 - CentOS 7
 
 # Quick Start
-```console
+```shell
 #In Project Root Directory
 
   #Create and Start Instance
@@ -21,7 +21,7 @@ This project is a minimum viable product that manages a cluster of nodes/servers
   ./scripts/host_info.sh <psql_host> 5432 host_agent <db_username> <db_password>
   
   #Edit crontab jobs to execute host_usage script.
-  > crontab -e
+  crontab -e
     
   #add this to crontab
     * * * * * bash /<PATH_TO_ROOT_FOLDER>/scripts/host_usage.sh <psql_host> 5432 host_agent <db_username> <db_password> > /tmp/host_usage.log
@@ -34,19 +34,19 @@ Discuss how you implement the project.
 
 ## Scripts
 - psql_docker.sh:: Creates a PSQL docker container with the given username and password. Also can start and stop the container
-  - ```console
+  - ```shell
     ./scripts/psql_docker.sh start|stop|create [db_username][db_password]
     ```
 - host_info.sh:: Inserts host hardware information to the database(host_info).
-  - ```console
+  - ```shell
     ./scripts/host_info.sh <psql_host> <psql_port> host_agent <db_username> <db_password>
     ```
 - host_usage.sh:: Inserts host usage information to database(host_usage).
-  - ```console
+  - ```shell
       ./scripts/host_usage.sh <psql_host> 5432 host_agent <db_username> <db_password>
     ```
 - crontab
-  - ```console
+  - ```shell
     #edit crontab jobs
     bash> crontab -e
     
@@ -54,7 +54,7 @@ Discuss how you implement the project.
     * * * * * bash /<PATH_TO_ROOT_FOLDER>/scripts/host_usage.sh <psql_host> 5432 host_agent <db_username> <db_password> > /tmp/host_usage.log
     ```
 - ddl.sql:: Creates tables inside of database.
-  - ```console
+  - ```shell
     psql -h <psql_host> -U <db_username> -d host_agent -f sql/ddl.sql
     ```
 - queries.sql
