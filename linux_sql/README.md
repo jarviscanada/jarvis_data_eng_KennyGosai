@@ -28,7 +28,6 @@ This project is a minimum viable product that manages a cluster of nodes/servers
 ```
 
 # Implementation
-Discuss how you implement the project.
 ## Architecture
 ![Image of architecture](./assets/linuxsqlarchitecture.png)
 
