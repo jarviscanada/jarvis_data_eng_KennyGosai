@@ -52,7 +52,7 @@ highlighted_projects:
     #URL is optional
     git_url: "https://github.com/kennygosai/weather_checker"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed using a Node.js backend and a React.js (Material-UI design) frontend. This project gives a detailed report of the weather for any given city. The React.js client passes the City and Country values to the Node.js backend which communicates with the OpenSea API to fetch all of the data. This app is currently deployed through Heroku.
+    description: Developed using a Node.js backend and a React.js (Material-UI design) frontend. This project gives a detailed report of the weather for any given city. The React.js client passes the City and Country values to the Node.js backend which communicates with the OpenCage and DarkSky API to fetch the data. This app is currently deployed through Heroku.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
