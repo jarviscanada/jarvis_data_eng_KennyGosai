@@ -19,7 +19,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KennyGosai
 
 
 ## Highlighted Projects
-**Weather Checker** [[GitHub](https://github.com/kennygosai/weather_checker)]: Developed using a Node.js backend and a React.js (Material-UI design) frontend. This project gives a detailed report of the weather for any given city. The React.js client passes the City and Country values to the Node.js backend which communicates with the OpenSea API to fetch all of the data. This app is currently deployed through Heroku.
+**Weather Checker** [[GitHub](https://github.com/kennygosai/weather_checker)]: Developed using a Node.js backend and a React.js (Material-UI design) frontend. This project gives a detailed report of the weather for any given city. The React.js client passes the City and Country values to the Node.js backend which communicates with the OpenCage and DarkSky API to fetch the data. This app is currently deployed through Heroku.
 
 
 ## Professional Experiences
