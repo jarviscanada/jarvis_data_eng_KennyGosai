@@ -8,8 +8,8 @@ target/
 .idea/
 .eclipse
 /.idea
-*.xml
 /target/
 .git
 core_java/grep/src/main/java/ca/jrvs/apps/practice
 *.swp
+out/
