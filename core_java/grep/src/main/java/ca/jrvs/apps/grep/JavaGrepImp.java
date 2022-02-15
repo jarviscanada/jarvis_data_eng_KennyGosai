@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,14 +28,8 @@ public class JavaGrepImp implements JavaGrep{
         if(listOfFiles == null) return;
 
         for(File file: listOfFiles){
-            Scanner scanner = new Scanner(new File(""+file));
-            while(scanner.hasNextLine()){
-
-                String line = scanner.nextLine();
-                if(containsPattern(line)){
-                    matchedLines.add(file+": "+line);
-                }
-            }
+            List<String> fileMatches = readLines(file);
+            matchedLines.addAll(fileMatches);
         }
         try {
             writeToFile(matchedLines);
@@ -69,7 +64,20 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public List<String> readLines(File inputFile) {
-        return null;
+        Scanner scanner = null;
+        List<String> matchedLines = new ArrayList<String>();
+        try {
+            scanner = new Scanner(inputFile);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while(scanner.hasNextLine()){
+            String line = scanner.nextLine();
+            if(containsPattern(line)){
+                matchedLines.add(inputFile+": "+line);
+            }
+        }
+        return matchedLines;
     }
 
     @Override
