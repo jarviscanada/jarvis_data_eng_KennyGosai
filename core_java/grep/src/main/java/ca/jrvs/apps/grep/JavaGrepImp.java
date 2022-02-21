@@ -82,7 +82,6 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public boolean containsPattern(String line) {
-//        logger.debug("line: " + line);
         if(Pattern.matches(regex, line)) return true;
 
         return false;
