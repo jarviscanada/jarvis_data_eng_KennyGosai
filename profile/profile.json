@@ -1,0 +1,83 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Science",
+      "department": "Computer Science",
+      "duration": "2015-2020",
+      "school_name": "York  University, Lassonde School of Engineering"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_KennyGosai",
+  "highlighted_projects": [
+    {
+      "description": "Developed using a Node.js backend and a React.js (Material-UI design) frontend. This project gives a detailed report of the weather for any given city. The React.js client passes the City and Country values to the Node.js backend which communicates with the OpenCage and DarkSky API to fetch the data. This app is currently deployed through Heroku.",
+      "git_url": "https://github.com/kennygosai/weather_checker",
+      "name": "Weather Checker"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Developed a Linux Cluster Resouce Monitoring App using Bash, PostgreSQL and Docker which is used by the Jarvis Cluster Administration team. Implemented a Shell script to store the hardware specifications and hardware usage data of the node inside of a PostgreSQL database provisioned inside a docker container. Created a set of SQL scripts to solve business needs required from the Jarvis Administration Team. Deployed the app to a CentOS 7 remote desktop and scheduled crontab to monitor the usage data in real-time.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    }
+  ],
+  "name": "Kenny Gosai",
+  "others": [
+    {
+      "bullets": [
+        "Computer Engineering Technology Award (2015)"
+      ],
+      "title": "Awards"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Collaborated with other Software and Data engineers in an Agile environment to complete projects using various technologies such as Git, PostgreSQL, Docker, Bash, Java, etc. Actively participated in daily scrum, code reviews as well as bi-weekly sprint retrospectives.",
+      "duration": "2022-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Megram Consulting Services LTD.",
+      "description": "Developed and maintained websites for different clients, built using different languages such as PHP, SQL, HTML, CSS, JavaScript and jQuery. Collaborated with clients to figure out the business needs to fit the desired website. Improved website performance and responsiveness of websites.",
+      "duration": "2020-2021",
+      "title": "Website Developer"
+    },
+    {
+      "company": "Surge ERP",
+      "description": "Developed website forms and graphical images using React.js, Node.js and Python. Implemented a random image generator using Python to generate digital assets (based on certain percentages) to be available as non-fungible tokens. Implemented forms using React.js to pass user information to a Node.js backend.",
+      "duration": "2019-2020",
+      "title": "Graphic Designer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "PHP",
+      "React.js",
+      "Node.js",
+      "Python",
+      "Docker"
+    ],
+    "familiar": [
+      "Next.js",
+      "Google Firebase",
+      "Unity",
+      "C (programming language)",
+      "Artificial Intelligence"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git/GitFlow/GitHub",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "jQuery"
+    ]
+  },
+  "summary": "I am a highly ambitious software developer looking to continue to develop my skills and contribute to building innovative and cutting-edge business solutions. My academic background includes a Bachelor's degree in Computer Science from the Lassonde School of Engineering, York University. I have worked professionally as a Graphic Designer, Website Developer and Software Developer. Some of my experience includes working with technologies like React.js, Node.js, PHP, Bash, PostgreSQL, Docker and Python. I also have worked on personal web applications built using technologies like  React.js and Node.js."
+}
