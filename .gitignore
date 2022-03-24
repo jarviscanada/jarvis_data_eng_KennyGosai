@@ -1,0 +1,15 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.idea/
+.eclipse
+/.idea
+/target/
+.git
+core_java/grep/src/main/java/ca/jrvs/apps/practice
+*.swp
+out/
